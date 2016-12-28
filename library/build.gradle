@@ -1,7 +1,11 @@
-apply plugin: 'com.android.library'
-
 group = 'ru.noties.cursormock'
 version = '1.0.0'
+
+apply plugin: 'com.android.library'
+
+if (project.hasProperty('release')) {
+    apply from: 'https://raw.githubusercontent.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+}
 
 android {
 

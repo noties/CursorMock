@@ -66,8 +66,8 @@ public abstract class CursorMockBuilder {
      * Factory method to start building a {@link CursorMock} based on column names
      *
      * {@code
-     *     final CursorMock mock = CursorMockBuilder.forColumns(\"id\", \"name\")
-     *          .addRow(1L, \"Jimmy\")
+     *     final CursorMock mock = CursorMockBuilder.forColumns("id", "name")
+     *          .addRow(1L, "Jimmy")
      *          .build();
      * }
      *
@@ -102,7 +102,7 @@ public abstract class CursorMockBuilder {
      *
      * @param cl a {@link Class} to build {@link CursorSchema} from
      * @param processor a {@link ObjectProcessor} to manipulate data (required)
-     * @param <T> for type safety (will allow adding objects only of `<T>` instance)
+     * @param <T> for type safety (will allow adding objects only of `T` instance)
      * @return a {@link ForClass} instance
      * @throws IllegalArgumentException if supplied `cl` has no fields, or all fields were filtered
      *          by {@link ObjectProcessor#ignore(Field)}
@@ -197,7 +197,7 @@ public abstract class CursorMockBuilder {
         }
 
         /**
-         * Method to add a collection of objects of type `<T>`
+         * Method to add a collection of objects of type `T`
          * @param collection non-null collection of T (can contain 0 items, no rows will be inserted)
          * @return instance for chaining
          */

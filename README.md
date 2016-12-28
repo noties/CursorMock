@@ -1,0 +1,1 @@
+[![Maven Central](https://img.shields.io/maven-central/v/ru.noties/cursormock.svg)](http://search.maven.org/#search\|ga\|1\|g%3A%22ru.noties%22%20AND%20a%3A%22cursormock%22)
