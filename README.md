@@ -52,8 +52,8 @@ final CursorMock mock = CursorMockBuilder.forColumns("id", "name", "points")
 ```
 So, after `build` the data can be represented as a table:
 
-||id|name|points|
-|-|--|----|------|
+|*|id|name|points|
+|---|---|----|------|
 |1|null|null|null|
 |2|2L|null|null|
 |3|3L|FuBar|null|
@@ -70,6 +70,7 @@ will throw an exception at `.addRow("string")` as previously a long was added at
 
 ### Types
 CursorMock has 4 types of the data that can be added to Cursor without explicit convertion (other types will be discussed further):
+
 | Java type | Cursor |
 | --- | --- |
 | short | INT |
@@ -189,6 +190,7 @@ final CursorMock mock = CursorMockBuilder.forClass(Item.class, new MyObjectProce
                 .build();
 ```
 The data will be as follows:
+
 |*|item_id|name|score|
 |---|---|---|---|
 |1|1L|#1|45|
