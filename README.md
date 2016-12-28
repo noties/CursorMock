@@ -70,15 +70,15 @@ will throw an exception at `.addRow("string")` as previously a long was added at
 
 ### Types
 CursorMock has 4 types of the data that can be added to Cursor without explicit convertion (other types will be discussed further):
-|Java type|Cursor|
-|---|---|
-|short|INT|
-|int|INT|
-|long|INT|
-|float|FLOAT|
-|double|FLOAT|
-|String|TEXT|
-|byte[]|BLOB|
+| Java type | Cursor |
+| --- | --- |
+| short | INT |
+| int | INT |
+| long | INT |
+| float | FLOAT |
+| double | FLOAT |
+| String | TEXT |
+| byte[] | BLOB |
 
 All numeric types can be also boxed (Short, Integer, Long, Float, Double). There is no support for boolean/Boolean, Byte[], etc.
 
@@ -189,7 +189,7 @@ final CursorMock mock = CursorMockBuilder.forClass(Item.class, new MyObjectProce
                 .build();
 ```
 The data will be as follows:
-||item_id|name|score|
+|*|item_id|name|score|
 |---|---|---|---|
 |1|1L|#1|45|
 |2|2L|null|89|
